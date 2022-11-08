@@ -19,3 +19,8 @@ a1.user_name();
 a1.phone_nO();
 a1.salary_amt();
 a1.adress_home();
+
+
+
+
+
