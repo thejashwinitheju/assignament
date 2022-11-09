@@ -1,15 +1,10 @@
-
-            function view(num){
-                document.getElementById("result").value+=num;
-            }
-            function compute(){
-                var x=document.getElementById("result").value;
-                var y=eval(x);
-                document.getElementById("result").value=y;
-            }
-            function clr()
-            {
-                document.getElementById("result").value="";
-            }
-                   
-                    
+function ac(){
+    document.getElementById("res").value=""
+}  
+function show(input){
+    document.getElementById("res").value+=input;
+}       
+    function cal(){
+        var output=eval(document.getElementById("res").value);
+        document.getElementById("res").value=output
+    }                

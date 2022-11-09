@@ -1,51 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./clasi.css">
-    <script src="./clasi.js" type="text/javascript"></script>
-</head>
-<body>
-    <div class="calsi" id="calsi" name="calsi"></div>
-    <h1>Calculator</h1>
-    <input type="text" id="screen" name="screen">
-        <table class="table" id="table">
+<html>
+    <head>
+        <script src="./clasi.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <table border="1">
+            <h1>CALCULATOR</h1>
             <tr>
-                <td><button value="AC" onclick="">AC</button></td>
-                <td><button value="(" onclick="">(</button></td>
-                <td><button value=")" onclick="">)</button></td>
-                <td><button value="%" onclick="">%</button></td>
+<td colspan="3"><input type="text" id="res">
+    <td><button onclick="ac()">AC</button></td>
+</td>
             </tr>
             <tr>
-                <td><button value="7" onclick="view('7')">7</button></td>
-                <td><button value="8" onclick="view('8')">8</button></td>
-                <td><button value="9" onclick="view('9')">9</button></td>
-                <td><button value="*" onclick="">*</button></td>
+                <td><button onclick="show('7')">7</button></td>
+                <td><button onclick="show('8')">8</button></td>
+                <td><button onclick="show('9')">9</button></td>
+                <td><button onclick="show('+')">+</button></td>
             </tr>
             <tr>
-                <td><button value="4" onclick="view('4')">4</button></td>
-                <td><button value="5" onclick="view('5')">5</button></td>
-                <td><button value="6" onclick="view('6')">6</button></td>
-                <td><button value="-" onclick="">-</button></td>
+                <td><button onclick="show('6')">6</button></td>
+                <td><button onclick="show('5')">5</button></td>
+                <td><button onclick="show('4')">4</button></td>
+                <td><button onclick="show('-')">-</button></td>
             </tr>
             <tr>
-                <td><button value="1" onclick="view('1')">1</button></td>
-                <td><button value="2" onclick="view('2')">2</button></td>
-                <td><button value="3" onclick="view('3')">3</button></td>
-                <td><button value="+" onclick="">+</button></td>
+                <td><button onclick="show('3')">3</button></td>
+                <td><button onclick="show('2')">2</button></td>
+                <td><button onclick="show('1')">1</button></td>
+                <td><button onclick="show('*')">*</button></td>
             </tr>
             <tr>
-                <td><button value="00" onclick="view('00')">00</button></td>
-                <td><button value="0" onclick="view('0')">0</button></td>
-                <td><button value="." onclick="">.</button></td>
-                <td><button value="=" onclick="">=</button></td>
+                <td><button onclick="show('0')">0</button></td>
+                <td><button onclick="show('%')">%</button></td>
+                <td><button onclick="show('/')">/</button></td>
+                <td><button onclick="cal('=')">=</button></td>
             </tr>
-            
         </table>
-
-    </div>
-</body>
+    </body>
 </html>
